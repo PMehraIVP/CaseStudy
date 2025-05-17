@@ -1,0 +1,860 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Case_Study_2025",
+    "version": "1.0"
+  },
+  "paths": {
+    "/Bonds/BondsTable/get": {
+      "get": {
+        "tags": [
+          "BondsTable"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Bonds/BondsTable/getDataByColumn/{tabName}": {
+      "get": {
+        "tags": [
+          "BondsTable"
+        ],
+        "parameters": [
+          {
+            "name": "tabName",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Bonds/BondsTable/addBond": {
+      "post": {
+        "tags": [
+          "BondsTable"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BondsTable"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BondsTable"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/BondsTable"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Bonds/BondsTable/getBondById/{secId}": {
+      "get": {
+        "tags": [
+          "BondsTable"
+        ],
+        "parameters": [
+          {
+            "name": "secId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Bonds/BondsTable/getBondByName/{secName}": {
+      "get": {
+        "tags": [
+          "BondsTable"
+        ],
+        "parameters": [
+          {
+            "name": "secName",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Bonds/BondsTable/updateBond": {
+      "put": {
+        "tags": [
+          "BondsTable"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BondsTable"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BondsTable"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/BondsTable"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Bonds/BondsTable/deleteBondByName/{bondName}": {
+      "delete": {
+        "tags": [
+          "BondsTable"
+        ],
+        "parameters": [
+          {
+            "name": "bondName",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Equity/EquityTable/get": {
+      "get": {
+        "tags": [
+          "EquityTable"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Equity/EquityTable/getData/{tabName}": {
+      "get": {
+        "tags": [
+          "EquityTable"
+        ],
+        "parameters": [
+          {
+            "name": "tabName",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Equity/EquityTable/addSecurity": {
+      "post": {
+        "tags": [
+          "EquityTable"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EquityTable"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EquityTable"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/EquityTable"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Equity/EquityTable/getSecById/{secId}": {
+      "get": {
+        "tags": [
+          "EquityTable"
+        ],
+        "parameters": [
+          {
+            "name": "secId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Equity/EquityTable/delete/{secId}": {
+      "delete": {
+        "tags": [
+          "EquityTable"
+        ],
+        "parameters": [
+          {
+            "name": "secId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Equity/EquityTable/updateEquity": {
+      "put": {
+        "tags": [
+          "EquityTable"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EquityTable"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EquityTable"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/EquityTable"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Equity/EquityTable/getSecByName/{secName}": {
+      "get": {
+        "tags": [
+          "EquityTable"
+        ],
+        "parameters": [
+          {
+            "name": "secName",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "BondsTable": {
+        "type": "object",
+        "properties": {
+          "securityId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "securityDescription": {
+            "type": "string",
+            "nullable": true
+          },
+          "securityName": {
+            "type": "string",
+            "nullable": true
+          },
+          "assetType": {
+            "type": "string",
+            "nullable": true
+          },
+          "investmentType": {
+            "type": "string",
+            "nullable": true
+          },
+          "tradingFactor": {
+            "type": "string",
+            "nullable": true
+          },
+          "pricingFactor": {
+            "type": "string",
+            "nullable": true
+          },
+          "isin": {
+            "type": "string",
+            "nullable": true
+          },
+          "bloombergTicker": {
+            "type": "string",
+            "nullable": true
+          },
+          "bloombergUniqueId": {
+            "type": "string",
+            "nullable": true
+          },
+          "cusip": {
+            "type": "string",
+            "nullable": true
+          },
+          "sedol": {
+            "type": "string",
+            "nullable": true
+          },
+          "firstCouponDate": {
+            "type": "string",
+            "nullable": true
+          },
+          "couponCap": {
+            "type": "string",
+            "nullable": true
+          },
+          "couponFloor": {
+            "type": "string",
+            "nullable": true
+          },
+          "couponFrequency": {
+            "type": "string",
+            "nullable": true
+          },
+          "couponRate": {
+            "type": "string",
+            "nullable": true
+          },
+          "couponType": {
+            "type": "string",
+            "nullable": true
+          },
+          "floatSpread": {
+            "type": "string",
+            "nullable": true
+          },
+          "isCallable": {
+            "type": "string",
+            "nullable": true
+          },
+          "isFixToFloat": {
+            "type": "string",
+            "nullable": true
+          },
+          "isPutable": {
+            "type": "string",
+            "nullable": true
+          },
+          "issueDate": {
+            "type": "string",
+            "nullable": true
+          },
+          "lastResetDate": {
+            "type": "string",
+            "nullable": true
+          },
+          "maturityDate": {
+            "type": "string",
+            "nullable": true
+          },
+          "maximumCallNoticeDays": {
+            "type": "string",
+            "nullable": true
+          },
+          "maximumPutNoticeDays": {
+            "type": "string",
+            "nullable": true
+          },
+          "penultimateCouponDate": {
+            "type": "string",
+            "nullable": true
+          },
+          "resetFrequency": {
+            "type": "string",
+            "nullable": true
+          },
+          "hasPosition": {
+            "type": "string",
+            "nullable": true
+          },
+          "duration": {
+            "type": "string",
+            "nullable": true
+          },
+          "volatility30D": {
+            "type": "string",
+            "nullable": true
+          },
+          "volatility90D": {
+            "type": "string",
+            "nullable": true
+          },
+          "convexity": {
+            "type": "string",
+            "nullable": true
+          },
+          "averageVolume30D": {
+            "type": "string",
+            "nullable": true
+          },
+          "formPfassetClass": {
+            "type": "string",
+            "nullable": true
+          },
+          "formPfcountry": {
+            "type": "string",
+            "nullable": true
+          },
+          "formPfcreditRating": {
+            "type": "string",
+            "nullable": true
+          },
+          "formPfcurrency": {
+            "type": "string",
+            "nullable": true
+          },
+          "formPfinstrument": {
+            "type": "string",
+            "nullable": true
+          },
+          "formPfliquidityProfile": {
+            "type": "string",
+            "nullable": true
+          },
+          "formPfmaturity": {
+            "type": "string",
+            "nullable": true
+          },
+          "formPfnaicscode": {
+            "type": "string",
+            "nullable": true
+          },
+          "formPfregion": {
+            "type": "string",
+            "nullable": true
+          },
+          "formPfsector": {
+            "type": "string",
+            "nullable": true
+          },
+          "formPfsubAssetClass": {
+            "type": "string",
+            "nullable": true
+          },
+          "bloombergIndustryGroup": {
+            "type": "string",
+            "nullable": true
+          },
+          "bloombergIndustrySubGroup": {
+            "type": "string",
+            "nullable": true
+          },
+          "bloombergSector": {
+            "type": "string",
+            "nullable": true
+          },
+          "issueCountry": {
+            "type": "string",
+            "nullable": true
+          },
+          "issueCurrency": {
+            "type": "string",
+            "nullable": true
+          },
+          "issuer": {
+            "type": "string",
+            "nullable": true
+          },
+          "riskCurrency": {
+            "type": "string",
+            "nullable": true
+          },
+          "putDate": {
+            "type": "string",
+            "nullable": true
+          },
+          "putPrice": {
+            "type": "string",
+            "nullable": true
+          },
+          "askPrice": {
+            "type": "string",
+            "nullable": true
+          },
+          "highPrice": {
+            "type": "string",
+            "nullable": true
+          },
+          "lowPrice": {
+            "type": "string",
+            "nullable": true
+          },
+          "openPrice": {
+            "type": "string",
+            "nullable": true
+          },
+          "volume": {
+            "type": "string",
+            "nullable": true
+          },
+          "bidPrice": {
+            "type": "string",
+            "nullable": true
+          },
+          "lastPrice": {
+            "type": "string",
+            "nullable": true
+          },
+          "callDate": {
+            "type": "string",
+            "nullable": true
+          },
+          "callPrice": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "EquityTable": {
+        "type": "object",
+        "properties": {
+          "securityId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "securityName": {
+            "type": "string",
+            "nullable": true
+          },
+          "securityDescription": {
+            "type": "string",
+            "nullable": true
+          },
+          "hasPosition": {
+            "type": "string",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "string",
+            "nullable": true
+          },
+          "roundLotSize": {
+            "type": "string",
+            "nullable": true
+          },
+          "bloombergUniqueName": {
+            "type": "string",
+            "nullable": true
+          },
+          "cusip": {
+            "type": "string",
+            "nullable": true
+          },
+          "isin": {
+            "type": "string",
+            "nullable": true
+          },
+          "sedol": {
+            "type": "string",
+            "nullable": true
+          },
+          "bloombergTicker": {
+            "type": "string",
+            "nullable": true
+          },
+          "bloombergUniqueId": {
+            "type": "string",
+            "nullable": true
+          },
+          "bloombergGlobalId": {
+            "type": "string",
+            "nullable": true
+          },
+          "bloombergTickerAndExchange": {
+            "type": "string",
+            "nullable": true
+          },
+          "isAdr": {
+            "type": "string",
+            "nullable": true
+          },
+          "adrUnderlyingTicker": {
+            "type": "string",
+            "nullable": true
+          },
+          "adrUnderlyingCurrency": {
+            "type": "string",
+            "nullable": true
+          },
+          "sharesPerAdr": {
+            "type": "string",
+            "nullable": true
+          },
+          "ipoDate": {
+            "type": "string",
+            "nullable": true
+          },
+          "priceCurrency": {
+            "type": "string",
+            "nullable": true
+          },
+          "settleDays": {
+            "type": "string",
+            "nullable": true
+          },
+          "sharesOutstanding": {
+            "type": "string",
+            "nullable": true
+          },
+          "votingRightsPerShare": {
+            "type": "string",
+            "nullable": true
+          },
+          "twentyDayAverageVolume": {
+            "type": "string",
+            "nullable": true
+          },
+          "beta": {
+            "type": "string",
+            "nullable": true
+          },
+          "shortInterest": {
+            "type": "string",
+            "nullable": true
+          },
+          "ytdReturn": {
+            "type": "string",
+            "nullable": true
+          },
+          "ninetyDayPriceVolatility": {
+            "type": "string",
+            "nullable": true
+          },
+          "formPfAssetClass": {
+            "type": "string",
+            "nullable": true
+          },
+          "formPfCountry": {
+            "type": "string",
+            "nullable": true
+          },
+          "formPfCreditRating": {
+            "type": "string",
+            "nullable": true
+          },
+          "formPfCurrency": {
+            "type": "string",
+            "nullable": true
+          },
+          "formPfInstrument": {
+            "type": "string",
+            "nullable": true
+          },
+          "formPfLiquidityProfile": {
+            "type": "string",
+            "nullable": true
+          },
+          "formPfMaturity": {
+            "type": "string",
+            "nullable": true
+          },
+          "formPfNaicsCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "formPfRegion": {
+            "type": "string",
+            "nullable": true
+          },
+          "formPfSector": {
+            "type": "string",
+            "nullable": true
+          },
+          "formPfSubAssetClass": {
+            "type": "string",
+            "nullable": true
+          },
+          "issueCountry": {
+            "type": "string",
+            "nullable": true
+          },
+          "exchange": {
+            "type": "string",
+            "nullable": true
+          },
+          "issuer": {
+            "type": "string",
+            "nullable": true
+          },
+          "issueCurrency": {
+            "type": "string",
+            "nullable": true
+          },
+          "tradingCurrency": {
+            "type": "string",
+            "nullable": true
+          },
+          "bloombergIndustrySubGroup": {
+            "type": "string",
+            "nullable": true
+          },
+          "bloombergIndustryGroup": {
+            "type": "string",
+            "nullable": true
+          },
+          "bloombergIndustrySector": {
+            "type": "string",
+            "nullable": true
+          },
+          "countryOfIncorporation": {
+            "type": "string",
+            "nullable": true
+          },
+          "riskCurrency": {
+            "type": "string",
+            "nullable": true
+          },
+          "openPrice": {
+            "type": "string",
+            "nullable": true
+          },
+          "closePrice": {
+            "type": "string",
+            "nullable": true
+          },
+          "volume": {
+            "type": "string",
+            "nullable": true
+          },
+          "lastPrice": {
+            "type": "string",
+            "nullable": true
+          },
+          "askPrice": {
+            "type": "string",
+            "nullable": true
+          },
+          "bidPrice": {
+            "type": "string",
+            "nullable": true
+          },
+          "peRatio": {
+            "type": "string",
+            "nullable": true
+          },
+          "declaredDate": {
+            "type": "string",
+            "nullable": true
+          },
+          "exDate": {
+            "type": "string",
+            "nullable": true
+          },
+          "recordDate": {
+            "type": "string",
+            "nullable": true
+          },
+          "payDate": {
+            "type": "string",
+            "nullable": true
+          },
+          "amount": {
+            "type": "string",
+            "nullable": true
+          },
+          "frequency": {
+            "type": "string",
+            "nullable": true
+          },
+          "dividendType": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

@@ -1,0 +1,214 @@
+[
+  {
+    "ContainingType": "Case_Study_2025.Controllers.BondsTableController",
+    "Method": "AddBond",
+    "RelativePath": "Bonds/BondsTable/addBond",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bond",
+        "Type": "Case_Study_2025.Models.BondsTable",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Case_Study_2025.Controllers.BondsTableController",
+    "Method": "DeleteBondByName",
+    "RelativePath": "Bonds/BondsTable/deleteBondByName/{bondName}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bondName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Case_Study_2025.Controllers.BondsTableController",
+    "Method": "GetAllData",
+    "RelativePath": "Bonds/BondsTable/get",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Case_Study_2025.Controllers.BondsTableController",
+    "Method": "GetBondById",
+    "RelativePath": "Bonds/BondsTable/getBondById/{secId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "secId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Case_Study_2025.Controllers.BondsTableController",
+    "Method": "GetBondByName",
+    "RelativePath": "Bonds/BondsTable/getBondByName/{secName}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "secName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Case_Study_2025.Controllers.BondsTableController",
+    "Method": "GetDataByColumn",
+    "RelativePath": "Bonds/BondsTable/getDataByColumn/{tabName}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tabName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Case_Study_2025.Controllers.BondsTableController",
+    "Method": "UpdateBond",
+    "RelativePath": "Bonds/BondsTable/updateBond",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bond",
+        "Type": "Case_Study_2025.Models.BondsTable",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Case_Study_2025.Controllers.EquityTableController",
+    "Method": "AddSec",
+    "RelativePath": "Equity/EquityTable/addSecurity",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "table",
+        "Type": "Case_Study_2025.Models.EquityTable",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Case_Study_2025.Controllers.EquityTableController",
+    "Method": "DelSecurity",
+    "RelativePath": "Equity/EquityTable/delete/{secId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "secId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Case_Study_2025.Controllers.EquityTableController",
+    "Method": "GetAllData",
+    "RelativePath": "Equity/EquityTable/get",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Case_Study_2025.Controllers.EquityTableController",
+    "Method": "GetTabData",
+    "RelativePath": "Equity/EquityTable/getData/{tabName}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tabName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Case_Study_2025.Controllers.EquityTableController",
+    "Method": "getSecById",
+    "RelativePath": "Equity/EquityTable/getSecById/{secId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "secId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Case_Study_2025.Controllers.EquityTableController",
+    "Method": "getSecByName",
+    "RelativePath": "Equity/EquityTable/getSecByName/{secName}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "secName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Case_Study_2025.Controllers.EquityTableController",
+    "Method": "UpdatSecById",
+    "RelativePath": "Equity/EquityTable/updateEquity",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "table",
+        "Type": "Case_Study_2025.Models.EquityTable",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
